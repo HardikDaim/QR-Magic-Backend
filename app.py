@@ -20,7 +20,7 @@ def generate_qr_code():
     if data:
         # Sanitize the URL to create a valid filename
         sanitized_data = data.replace("://", "_").replace("/", "_")
-        filename = '{sanitized_data}.png'
+        filename = f'{sanitized_data}.png'
 
         # Check if the file already exists
         if os.path.exists(os.path.join('qrcodes', filename)):
