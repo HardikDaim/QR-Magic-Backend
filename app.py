@@ -5,7 +5,7 @@ from flask_cors import CORS  # Import CORS
 from flask import send_file
 
 app = Flask(__name__)
-CORS(app)  # Enable CORS for your Flask app
+CORS(app , origins=['https://qr-magic.onrender.com'])  # Enable CORS for your Flask app
 
 # Set up a route to serve static files (QR codes)
 @app.route('/qrcodes/<filename>')
